@@ -1,0 +1,181 @@
+$p1: #03a9f4;
+$p2: #f75e2e;
+$p3: #ecfa4d;
+$p4: #656a70;
+
+$light: white;
+$dark: black;
+
+$l11: mix($light, $p1, 40%);
+$l12: mix($light, $p2, 40%);
+$l13: mix($light, $p3, 40%);
+$l14: mix($light, $p4, 40%);
+
+$l21: mix($light, $p1, 75%);
+$l22: mix($light, $p2, 75%);
+$l23: mix($light, $p3, 75%);
+$l24: mix($light, $p4, 75%);
+
+$l31: mix($light, $p1, 90%);
+$l32: mix($light, $p2, 90%);
+$l33: mix($light, $p3, 90%);
+$l34: mix($light, $p4, 90%);
+
+$d11: mix($dark, $p1, 20%);
+$d12: mix($dark, $p2, 20%);
+$d13: mix($dark, $p3, 20%);
+$d14: mix($dark, $p4, 20%);
+
+$d21: mix($dark, $p1, 50%);
+$d22: mix($dark, $p2, 50%);
+$d23: mix($dark, $p3, 50%);
+$d24: mix($dark, $p4, 50%);
+
+$d31: mix($dark, $p1, 70%);
+$d32: mix($dark, $p2, 70%);
+$d33: mix($dark, $p3, 70%);
+$d34: mix($dark, $p4, 70%);
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url(../../../fonts/Poppins-Bold.woff);
+}
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url(../../../fonts/Poppins-Medium.woff);
+}
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(../../../fonts/Poppins-Regular.woff);
+}
+
+$font-regular: 'Poppins-Regular';
+$font-medium: 'Poppins-Medium';
+$font-bold: 'Poppins-Bold';
+
+
+@mixin typography($f-size:14pt, $f-family:$font-medium, $f-color:$d34) {
+    font-size: $f-size;
+    font-family: $f-family;
+    color: $f-color;
+}
+
+
+h1{
+    @include typography(35pt, $font-bold);
+}
+h2{
+    @include typography(33pt, $font-medium, $d24);
+}
+h3{
+    @include typography(27pt);
+}
+h4{
+    @include typography(22pt);
+}
+h5{
+    @include typography(17pt);
+}
+h6{
+    @include typography(15pt);
+}
+p{
+    @include typography(14pt, $font-regular);
+}
+
+button:disabled{
+
+}
+
+.color{
+    background-color: rgb(27, 219, 219);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.p1{
+    background-color: $p1;
+}
+.p2{
+    background-color: $p2;
+}
+.p3{
+    background-color: $p3;
+}
+.p4{
+    background-color: $p4;
+}
+.l11{
+    background-color: $l11;
+}
+.l12{
+    background-color: $l12;
+}
+.l13{
+    background-color: $l13;
+}
+.l14{
+    background-color: $l14;
+}
+.l21{
+    background-color: $l21;
+}
+.l22{
+    background-color: $l22;
+}
+.l23{
+    background-color: $l23;
+}
+.l24{
+    background-color: $l24;
+}
+.l31{
+    background-color: $l31;
+}
+.l32{
+    background-color: $l32;
+}
+.l33{
+    background-color: $l33;
+}
+.l34{
+    background-color: $l34;
+}
+.d11{
+    background-color: $d11;
+}
+.d12{
+    background-color: $d12;
+}
+.d13{
+    background-color: $d13;
+}
+.d14{
+    background-color: $d14;
+}
+.d21{
+    background-color: $d21;
+}
+.d22{
+    background-color: $d22;
+}
+.d23{
+    background-color: $d23;
+}
+.d24{
+    background-color: $d24;
+}
+.d31{
+    background-color: $d31;
+}
+.d32{
+    background-color: $d32;
+}
+.d33{
+    background-color: $d33;
+}
+.d34{
+    background-color: $d34;
+}
